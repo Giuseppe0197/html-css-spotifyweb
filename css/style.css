@@ -13,6 +13,7 @@ body {
 main {
     height: calc(100vh - 80px);
     display: flex;
+    overflow-y: scroll;
 }
 
 footer {
@@ -136,6 +137,11 @@ span:hover {
     font-size: 12px;
 }
 
+.lista ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 /* parte inferiore del menu */
 
 .download {
@@ -235,6 +241,8 @@ span:hover {
     margin: auto;
 }
 
+/* album sezione 1 */
+
 h2 {
     margin: 20px;
     color: white;
@@ -263,4 +271,21 @@ h4 {
 .subtitle {
     color: #676A70;
     font-size: 10px;
+}
+
+/* album sezione 2 */
+
+.album-seconda-sezione {
+    width: 100%;
+    display: flex;
+}
+
+.copertine-seconda-sezione {
+    width: calc(100% / 6 - 20px);
+    text-align: center;
+    margin-left: 20px;
+}
+
+.copertine-seconda-sezione img {
+    max-width: 100%;
 }
