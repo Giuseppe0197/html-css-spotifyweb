@@ -29,15 +29,86 @@ main::after {
 /* parte principale destra */
 
 #menu {
-    width: 250px;
+    width: 200px;
     height: 100%;
     background-color: black;
+}
+
+#logo-spotify {
+    width: 60%;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+
+#bordo {
+    border-left: 3px solid #AFFF35;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icona-home {
+    margin: 25px 0 0 20px;
+    display: inline-block;
+}
+
+.icona-home img {
+    filter: invert(0.2);
+    vertical-align: middle;
+}
+
+.icona-home span {
+    color: #CCCCCC;
+    padding-left: 15px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.icona-cerca {
+    margin: 5px 0 0 25px
+}
+
+.icona-cerca img {
+    filter: invert(0.5);
+    vertical-align: middle;
+}
+
+.icona-cerca span {
+    color: #404040;
+    padding-left: 15px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.icona-libreria {
+    margin-left: 25px
+}
+
+.icona-libreria img {
+    filter: invert(0.5);
+    vertical-align: middle;
+}
+
+.icona-libreria span {
+    color: #404040;
+    padding-left: 15px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.menu-cerca-libreria {
+    width: 30px;
+}
+
+span:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 /* parte centrale con album e copertine */
 
 #brani {
-    width: calc(100vw - 250px);
+    width: calc(100vw - 200px);
     height: 100%;
     background-color: #141922;
 }
@@ -45,7 +116,7 @@ main::after {
 /* parte con bottone upgrade */
 
 #upgrade {
-    width: calc(100vw - 250px);
+    width: calc(100vw - 200px);
     height: 80px;
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
