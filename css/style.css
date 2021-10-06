@@ -217,6 +217,10 @@ span:hover {
     overflow-y: scroll;
 }
 
+#brani::-webkit-scrollbar {
+    display: none;
+}
+
 /* parte con bottone upgrade */
 
 #upgrade {
@@ -791,6 +795,80 @@ h4 {
 
     h4 {
         font-size: 13px;
+    }
+
+    /* footer */
+
+    /* parte sinistra */
+
+    .sinistra {
+        width: 25%;
+    }
+
+    .sinistra img {
+        width: 20px;
+        height: 20px;
+    }
+
+    #titolo-brano {
+        margin-top: 0;
+        font-size: 10px;
+    }
+
+    #artista {
+        font-size: 7px;
+    }
+
+    .fa-heart, .fa-folder {
+        font-size: 10px;
+        margin: auto;
+    }
+
+    /* centro */
+
+    .centro {
+        width: 35%;
+        align-items: center;
+    }
+
+    .centro i {
+        font-size: 12px;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+
+    .fa-play-circle {
+        font-size: 15px;
+        vertical-align: middle;
+    }
+
+    #barra-bianca {
+        width: 20px;
+        margin-left: 10px;
+    }
+
+    #barra-grigia {
+        width: 70px;
+        margin-right: 10px;
+    }
+
+    /* parte destra */
+
+    .destra {
+        width: 30%;
+    }
+
+    .destra i {
+        font-size: 12px;
+        margin-right: 5px;
+    }
+
+    #parte-bianca {
+        width: 10px;
+    }
+
+    #parte-grigia {
+        width: 40px;
     }
 
 }
