@@ -514,6 +514,9 @@ h4 {
 /* parte media query md */
 
 @media all and (min-width: 640px) and (max-width: 880px) {
+
+    /* parte centrale */
+
     .menu-navigazione {
         width: 90%;
         text-align: center;
@@ -535,6 +538,10 @@ h4 {
         transform: translate(-50%, -50%);
     }
 
+    /* parte footer */
+
+    /* sinistra */
+
     .sinistra {
         width: 30%;
     }
@@ -548,9 +555,13 @@ h4 {
         margin-top: 0;
     }
 
+    /* centro */
+
     .centro {
         width: 40%;
     }
+
+    /* destra */
 
     #barra-bianca {
         width: 30px;
@@ -576,3 +587,110 @@ h4 {
 }
 
 /* parte media query s */
+
+@media all and (min-width: 550px) and (max-width: 639px) {
+
+    /* parte centrale */
+
+    .menu-navigazione {
+        width: 100%;
+        margin: 90px auto 0;
+        text-align: center;
+    }
+
+    .menu-navigazione ul li {
+        font-size: 11px;
+    }
+
+    .album {
+        flex-wrap: wrap;
+    }
+
+    .copertine {
+        width: calc(100% / 2 - 20px);
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    h4 {
+        font-size: 13px;
+    }
+
+    /* parte footer */
+
+    /* sinistra */
+
+    .sinistra {
+        width: 30%;
+    }
+
+    .sinistra img {
+        width: 25px;
+        height: 25px;
+    }
+
+    #titolo-brano {
+        margin-top: 0;
+        font-size: 12px;
+    }
+
+    #artista {
+        font-size: 10px;
+    }
+
+    .fa-heart, .fa-folder {
+        font-size: 14px;
+        margin: auto 5px;
+    }
+
+    /* centro */
+
+    .centro {
+        width: 40%;
+        align-items: center;
+    }
+
+    .centro i {
+        font-size: 14px;
+        vertical-align: middle;
+        margin-left: 10px;
+    }
+
+    .fa-play-circle {
+        font-size: 15px;
+        vertical-align: middle;
+    }
+
+    #barra-bianca {
+        width: 30px;
+        margin-left: 10px;
+    }
+
+    #barra-grigia {
+        width: 90px;
+        margin-right: 10px;
+    }
+
+    /* destra */
+
+    .destra {
+        width: 20%;
+    }
+
+    .destra i {
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    #parte-bianca {
+        width: 10px;
+    }
+
+    #parte-grigia {
+        width: 40px;
+    }
+}
+
+/* media query xs */
