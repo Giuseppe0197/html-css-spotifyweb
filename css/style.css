@@ -48,6 +48,11 @@ main::after {
     margin-left: 25px;
 }
 
+#logo-small {
+    width: 30px;
+    display: none;
+}
+
 #bordo {
     border-left: 3px solid #AFFF35;
     height: 25px;
@@ -694,3 +699,98 @@ h4 {
 }
 
 /* media query xs */
+
+@media all and (max-width: 549px) {
+
+    /* regole generali */
+
+    #menu {
+        width: 50px;
+    }
+
+    #brani {
+        width: calc(100vw - 50px);
+    }
+
+    /* menu di sinistra */
+
+    /* disply none elementi non necessari */
+
+    #logo-spotify {
+        display: none;
+    }
+
+    #bordo {
+        display: none;
+    }
+
+    .icona-home span, .icona-cerca span, .icona-libreria span {
+        display: none;
+    }
+
+    #playlist, .fa-plus-square, #crea, #installa, #john {
+        display: none;
+    }
+
+    .lista {
+        display: none;
+    }
+
+    .download {
+        border-bottom: none;
+    }
+
+    /* stilizzazione icone per nuovo menu */
+
+    #logo-small {
+        display: block;
+        margin: 5px 10px;
+    }
+
+    .icona-home, .icona-cerca, .icona-libreria {
+        margin: 10px;
+    }
+
+    .menu-cerca-libreria {
+        width: 30px;
+    }
+
+    .download img {
+        width: 15px;
+    }
+
+    /* parte centrale */
+
+    /* menu con bottone superiore */
+
+    #upgrade {
+        width: calc(100vw - 50px);
+    }
+
+    .menu-navigazione {
+        width: 100%;
+        margin: 90px 0 0;
+        text-align: center;
+    }
+
+    .menu-navigazione ul li {
+        font-size: 10px;
+    }
+
+    .album {
+        flex-wrap: wrap;
+    }
+
+    .copertine {
+        width: calc(100% / 2 - 20px);
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    h4 {
+        font-size: 13px;
+    }
+
+}
