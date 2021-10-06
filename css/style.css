@@ -295,7 +295,7 @@ h2 {
     background-color: rgba(0, 0, 0, 0.5);
     top: 0;
     left: 0;
-    height: 200px;
+    height: 69%;
     width: 100%;
     display: none;
 }
@@ -519,5 +519,17 @@ h4 {
 
     .copertine {
         width: calc(100% / 4 - 20px);
+    }
+
+    .sinistra {
+        width: 30vw;
+    }
+
+    .centro {
+        width: 30vw;
+    }
+
+    .destra {
+        width: 30vw;
     }
 }
