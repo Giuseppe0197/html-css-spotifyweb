@@ -219,6 +219,7 @@ span:hover {
     height: 80px;
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
+    z-index: 2;
 }
 
 #bottone {
@@ -294,7 +295,7 @@ h2 {
     background-color: rgba(0, 0, 0, 0.5);
     top: 0;
     left: 0;
-    height: 69%;
+    height: 200px;
     width: 100%;
     display: none;
 }
@@ -425,7 +426,7 @@ h4 {
 }
 
 .fa-play-circle:hover {
-    font-size: 35px;
+    transform: scale(1.2);
 }
 
 .time {
@@ -501,4 +502,22 @@ h4 {
     border: none;
     margin-right: 30px;
     align-self: center;
+}
+
+/* parte media query */
+
+@media all and (min-width: 640px) and (max-width: 880px) {
+    .menu-navigazione {
+        width: 90%;
+        text-align: center;
+        margin: 90px auto 0;
+    }
+
+    .album {
+        flex-wrap: wrap;
+    }
+
+    .copertine {
+        width: calc(100% / 4 - 20px);
+    }
 }
