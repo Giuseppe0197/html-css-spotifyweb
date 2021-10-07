@@ -206,8 +206,6 @@ span:hover {
     font-size: 13px;
 }
 
-
-
 /* parte centrale con album e copertine */
 
 #brani {
@@ -424,6 +422,10 @@ h4 {
     margin-top: 10px;
 }
 
+.fa-heart:hover, .fa-folder:hover {
+    color: white;
+}
+
 /* centro */
 
 .centro {
@@ -468,10 +470,23 @@ h4 {
     align-self: center;
 }
 
-#barra-bianca:hover {
+#barra:hover #barra-bianca {
     background-color: rgb(0, 160, 0);
     cursor: pointer;
+    width: 25px;
     border: rgb(0, 160, 0);
+}
+
+#barra:hover .pallino-barra {
+    display: block;
+}
+
+.pallino-barra {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    display: none;
 }
 
 #barra-grigia {
@@ -505,10 +520,15 @@ h4 {
     align-self: center;
 }
 
-#parte-bianca:hover {
+#volume:hover #parte-bianca {
     background-color: rgb(0, 160, 0);
     cursor: pointer;
+    width: 5px;
     border: rgb(0, 160, 0);
+}
+
+#volume:hover .pallino-barra {
+    display: block;
 }
 
 #parte-grigia {
@@ -871,4 +891,12 @@ h4 {
         width: 40px;
     }
 
+}
+
+/* menu inferiore parte destra scompare quando si restringe la pagina */
+
+@media all and (max-height: 400px) {
+    .download, .profilo {
+        display: none;
+    }
 }
