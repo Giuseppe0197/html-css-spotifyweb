@@ -81,6 +81,12 @@ main::after {
     margin: 5px 0 0 25px
 }
 
+.icona-cerca:hover img, .icona-cerca:hover span {
+    filter: invert(0);
+    color: white;
+    cursor: pointer;
+}
+
 .icona-cerca img {
     filter: invert(0.5);
     vertical-align: middle;
@@ -97,6 +103,12 @@ main::after {
     margin-left: 25px
 }
 
+.icona-libreria:hover img, .icona-libreria:hover span {
+    filter: invert(0);
+    color: white;
+    cursor: pointer;
+}
+
 .icona-libreria img {
     filter: invert(0.5);
     vertical-align: middle;
@@ -111,11 +123,6 @@ main::after {
 
 .menu-cerca-libreria {
     width: 20px;
-}
-
-span:hover {
-    color: white;
-    cursor: pointer;
 }
 
 #playlist {
@@ -138,7 +145,7 @@ span:hover {
     font-weight: bold;
 }
 
-.fa-plus-square:hover, #crea:hover {
+.playlist-button:hover i, .playlist-button:hover #crea {
     color: white;
     cursor: pointer;
 }
@@ -478,6 +485,7 @@ h4 {
 
 #barra {
     display: flex;
+    position: relative;
 }
 
 #barra-bianca {
@@ -489,10 +497,9 @@ h4 {
 }
 
 #barra:hover #barra-bianca {
-    background-color: rgb(0, 160, 0);
+    background-color: rgb(169, 231, 69);
     cursor: pointer;
-    width: 25px;
-    border: rgb(0, 160, 0);
+    border: rgb(169, 231, 69);
 }
 
 #barra:hover .pallino-barra {
@@ -504,6 +511,9 @@ h4 {
     height: 15px;
     background-color: white;
     border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 15%;
     display: none;
 }
 
@@ -529,6 +539,18 @@ h4 {
 
 #volume {
     display: flex;
+    position: relative;
+}
+
+.pallino-barra-2 {
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 15%;
+    display: none;
 }
 
 #parte-bianca {
@@ -539,13 +561,12 @@ h4 {
 }
 
 #volume:hover #parte-bianca {
-    background-color: rgb(0, 160, 0);
+    background-color: rgb(169, 231, 69);
     cursor: pointer;
-    width: 5px;
-    border: rgb(0, 160, 0);
+    border: rgb(169, 231, 69);
 }
 
-#volume:hover .pallino-barra {
+#volume:hover .pallino-barra-2 {
     display: block;
 }
 
@@ -608,9 +629,6 @@ h4 {
         width: 40%;
     }
 
-    #barra:hover #barra-grigia {
-        width: 190px;
-    }
 
     #barra-bianca {
         width: 30px;
@@ -628,12 +646,8 @@ h4 {
         width: 25%;
     }
 
-    #volume:hover #parte-grigia {
-        width: 40px;
-    }
-
     #parte-bianca {
-        width: 10px;
+        width: 15px;
     }
 
     #parte-grigia {
@@ -723,8 +737,8 @@ h4 {
         margin-left: 10px;
     }
 
-    #barra:hover #barra-grigia {
-        width: 80px;
+    .pallino-barra {
+        left: 23%;
     }
 
     #barra-grigia {
@@ -744,11 +758,7 @@ h4 {
     }
 
     #parte-bianca {
-        width: 10px;
-    }
-
-    #volume:hover #parte-grigia {
-        width: 30px;
+        width: 15px;
     }
 
     #parte-grigia {
@@ -901,12 +911,8 @@ h4 {
         margin-left: 10px;
     }
 
-    #barra:hover #barra-bianca {
-        width: 11px;
-    }
-
-    #barra:hover #barra-grigia {
-        width: 64px;
+    .pallino-barra {
+        left: 23%;
     }
 
     #barra-grigia {
@@ -926,11 +932,7 @@ h4 {
     }
 
     #parte-bianca {
-        width: 10px;
-    }
-
-    #volume:hover #parte-grigia {
-        width: 30px;
+        width: 15px;
     }
 
     #parte-grigia {
